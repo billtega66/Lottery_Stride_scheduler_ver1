@@ -9,9 +9,7 @@ public class JobGenerator {
 		Process[] processList = new Process[numJobs];
 		
 		for (int index=0; index<numJobs; index++) {
-			processList[index] = new Process(minLength, maxLength, 
-											 earliestArrival, latestArrival,
-											 minTickets, maxTickets);
+			processList[index] = new Process(minLength, maxLength, earliestArrival, latestArrival, minTickets, maxTickets);
 											
 		}
 		return processList;
